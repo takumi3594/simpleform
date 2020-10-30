@@ -1,0 +1,35 @@
+
+#omikuji{
+    width: 200px;
+    height: 200px;
+    background:red;
+    border-radius: 50%;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+.omikuji-center {
+    text-align:center;
+}
+
+.diary-text {
+    width:85%;
+}
+
+.diary-run {
+    cursor: pointer;
+}
+
+.diary-item-delete {
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.past-diary-text {
+    margin-left:25px;
+}

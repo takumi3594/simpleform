@@ -1,0 +1,14 @@
+<div id="body">
+    <h1>{{ title }}</h1>
+    <p>{{ message }}</p>
+    <form [formGroup] = "myControl"
+          (ngSubmit)="onSubmit()">
+    <div>
+        <label><input type="checkbox"
+          formControlName="control">Check Box</label>
+    </div> 
+    <div>
+        <input type="submit" value="click">
+    </div>
+    </form>
+</div>

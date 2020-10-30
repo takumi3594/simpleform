@@ -1,0 +1,15 @@
+<div id="omikuji"(click)="draw()">{{omikuji}}</div>
+<p class="omikuji-center">今日のあなたの運勢は{{ omikuji }}です</p>
+<p *ngIf="coment" class="omikuji-center">{{coment}}</p>
+
+<p>今日の一言日記</p>
+<input #diary type="text" class="diary-text" placeholder="How are you feeling now"
+     [(ngModel)]="diaryTitle" >
+     <input type="button" class="diary-run" value="決定" (click)="addDiary()"> 
+<div  *ngFor="let diary of diarys">
+    <input type="button" class="diary-item-delete"(click)="deleteDiary(diary.id)" value="&times;">
+    <div class="past-diary-text">{{ now | date:"yyyy年MM月dd日 HH:mm" }}:結果{{ diary.result }} {{ diary.title }}</div>
+    <input type="text" [(ngModel)]="diary.title">
+
+</div>
+

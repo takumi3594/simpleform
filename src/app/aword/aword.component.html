@@ -1,0 +1,6 @@
+<p>一言日記</p>
+<input type="text" placeholder="What needs to be done" 
+  [(ngModel)]="awordTitle" (keyup.enter)="addAword()">
+<div *ngFor="let aword of awords">
+        <div>{{ aword.title }}</div>
+</div>
